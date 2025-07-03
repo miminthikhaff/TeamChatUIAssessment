@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment02</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <div class="container-fluid px-3">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-light text-dark me-2 d-lg-none border-0" type="button">
+                    <i class="bi bi-list fs-5"></i>
+                </button>
+                <div class="navbar-brand mb-0 h1 me-2">
+                    <i class="bi bi teams-logo"></i>
+                </div>
+                <span class="fw-normal fs-6 teams-title"></span>
+            </div>
+            <!-- Search Section -->
+            <div class="d-flex align-items-center flex-grow-1 mx-4">
+                <div class="input-group search-box"></div>
+                <div class="input-group search-box">
+                    <span class="input-group-text bg-light border-end-0">
+                        <i class="bi bi-search text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control bg-light border-start-0" placeholder="Search here. Events and more.">
+                </div>
+            </div>
+            
+            <!-- User Actions -->
+            <div class="d-flex align-items-center">
+                <span class="me-3 text-muted small">English</span>
+                <button class="btn btn-outline-light text-dark me-2 border-0">
+                    <i class="bi bi-gear fs-5"></i>
+                </button>
+                <button class="btn btn-outline-light text-dark me-2 border-0">
+                    <i class="bi bi-bell fs-5"></i>
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-outline-light text-dark border-0" type="button" data-bs-toggle="dropdown">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop&crop=face" 
+                             class="rounded-circle profile-img" width="32" height="32" alt="User Profile">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container-fluid main-content">
+        <div class="row h-100">
+            <!-- Teams Navigation Sidebar -->
+            <div class="col-auto teams-sidebar">
+                <div class="d-flex flex-column align-items-center py-3 h-100">
+                    <div class="nav-icons">
+                        <!-- Activity -->
+                        <div class="nav-item mb-3">
+                            <button class="btn nav-btn" title="Activity">
+                                <i class="bi bi-house-exclamation fs-4"></i>
+                            </button>
+                        </div>
+                        <!-- Dashboard -->
+                         <div class="nav-item mb-3">
+                            <button class="btn nav-btn" title="Activity">
+                                <i class="bi bi-columns-gap fs-4""></i>
+                            </button>
+                        </div>
+                        <!-- Teams -->
+                        <div class="nav-item mb-3">
+                            <button class="btn nav-btn" title="Teams">
+                                <i class="bi bi-people fs-4"></i>
+                            </button>
+                        </div>
+
+                         <!-- Email -->
+                        <div class="nav-item mb-3">
+                            <button class="btn nav-btn active" title="Chat">
+                                <i class="bi bi-envelope fs-4"></i>
+                            </button>
+                            <div class="nav-indicator"></div>
+                        </div>
+
+                        <div class="nav-item mb-3">
+    <button class="btn nav-btn" title="Bills">
+        <i class="bi bi-receipt fs-4"></i>
+    </button>
+</div>
+
+  <!-- Calendar -->
+                        <div class="nav-item mb-3">
+                            <button class="btn nav-btn" title="Calendar">
+                                <i class="bi bi-calendar3 fs-4"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Chat -->
+                        <div class="nav-item mb-3">
+                            <button class="btn nav-btn active" title="Chat">
+                                <i class="bi bi-chat-dots fs-4"></i>
+                            </button>
+                            <div class="nav-indicator"></div>
+                        </div>
+                        
+                        
+                        
+                      
+                        
+                        <!-- Settings -->
+<div class="nav-item mb-3">
+    <button class="btn nav-btn" title="Settings">
+        <i class="bi bi-gear fs-4"></i>
+    </button>
+</div>
+
+<!-- Profile -->
+<div class="nav-item mb-3">
+    <button class="btn nav-btn" title="Profile">
+        <i class="bi bi-person fs-4"></i>
+    </button>
+</div>
+
+                        
+              
+                    </div>
+                    
+                    <!-- Bottom section -->
+                    <div class="mt-auto">
+                        <div class="nav-item">
+                            <button class="btn nav-btn" title="Apps">
+                                <i class="bi bi-person-circle fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Sidebar -->
+            <div class="col-lg-3 col-md-4 chat-sidebar bg-white">
+                <div class="p-3 h-100">
+                    <!-- Chat Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0 fw-semibold chat-title">Chat</h5>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light text-muted border-0" type="button">
+                                <i class="bi bi-three-dots"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Contacts -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-light border-end-0">
+                            <i class="bi bi-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control bg-light border-start-0" placeholder="Search Contact">
+                    </div>
+
+                    <!-- Contact List -->
+                    <div class="contacts-list mb-4">
+                        <!-- Jonathan -->
+                        <div class="contact-item d-flex align-items-center p-2 rounded mb-1">
+                            <div class="position-relative me-3">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop&crop=face" 
+                                     class="rounded-circle contact-avatar" width="32" height="32" alt="Jonathan">
+                                <span class="position-absolute bottom-0 end-0 bg-success rounded-circle online-indicator"></span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="fw-normal contact-name">Jonathan</div>
+                                <small class="text-muted contact-status">Available - Hey there!</small>
+                            </div>
+                            <span class="badge bg-danger rounded-pill message-count">1</span>
+                        </div>
+
+                        <!-- Elizabeth Jim -->
+                        <div class="contact-item d-flex align-items-center p-2 rounded mb-1">
+                            <div class="position-relative me-3">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop&crop=face" 
+                                     class="rounded-circle contact-avatar" width="32" height="32" alt="Elizabeth">
+                                <span class="position-absolute bottom-0 end-0 bg-warning rounded-circle online-indicator"></span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="fw-normal contact-name">Elizabeth Jim</div>
+                                <small class="text-muted contact-status">Away - In a meeting</small>
+                            </div>
+                        </div>
+
+                        <!-- Kevin -->
+                        <div class="contact-item d-flex align-items-center p-2 rounded mb-1">
+                            <div class="position-relative me-3">
+                                <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop&crop=face" 
+                                     class="rounded-circle contact-avatar" width="32" height="32" alt="Kevin">
+                                <span class="position-absolute bottom-0 end-0 bg-success rounded-circle online-indicator"></span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="fw-normal contact-name">Kevin</div>
+                                <small class="text-muted contact-status">Available - Working from home</small>
+                            </div>
+                            <span class="badge bg-danger rounded-pill message-count">1</span>
+                        </div>
+
+                        <!-- Michael Smith -->
+                        <div class="contact-item d-flex align-items-center p-2 rounded mb-1">
+                            <div class="position-relative me-3">
+                                <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop&crop=face" 
+                                     class="rounded-circle contact-avatar" width="32" height="32" alt="Michael">
+                                <span class="position-absolute bottom-0 end-0 bg-success rounded-circle online-indicator"></span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="fw-normal contact-name">Michael Smith</div>
+                                <small class="text-muted contact-status">Available</small>
+                            </div>
+                            <span class="badge bg-danger rounded-pill message-count">1</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex gap-2 mb-4">
+                        <button class="btn btn-teams-primary flex-fill action-btn">
+                            <i class="bi bi-camera-video me-1"></i>
+                            Meeting
+                        </button>
+                        <button class="btn btn-outline-teams-primary flex-fill action-btn">
+                            Schedule
+                        </button>
+                    </div>
+
+                    <!-- Groups Section -->
+                    <div class="groups-section">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6 class="mb-0 fw-semibold text-dark groups-title">Groups (5)</h6>
+                            <button class="btn btn-outline-light text-muted p-0 border-0">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="groups-container">
+                            <!-- App Development -->
+                            <div class="group-item d-flex align-items-center p-2 rounded mb-1">
+                                <div class="team-icon bg-success rounded me-3 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-code text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-normal team-name">App Development</div>
+                                </div>
+                                <div class="team-members d-flex">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                </div>
+                            </div>
+
+                            <!-- UI/UX Design (Active) -->
+                            <div class="group-item active-group d-flex align-items-center p-2 rounded mb-1">
+                                <div class="team-icon bg-teams-purple rounded me-3 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-palette text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-normal team-name text-white">UI/UX Design</div>
+                                </div>
+                                <div class="team-members d-flex">
+                                    <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                    <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Planning Also Team -->
+                            <div class="group-item d-flex align-items-center p-2 rounded mb-1">
+                                <div class="team-icon bg-warning rounded me-3 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-calendar text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-normal team-name">Planning Also Team</div>
+                                </div>
+                                <div class="team-members d-flex">
+                                    <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Marketing -->
+                            <div class="group-item d-flex align-items-center p-2 rounded mb-1">
+                                <div class="team-icon bg-info rounded me-3 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-megaphone text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-normal team-name">Marketing</div>
+                                </div>
+                                <div class="team-members d-flex">
+                                    <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Accounts and Sales Team -->
+                            <div class="group-item d-flex align-items-center p-2 rounded mb-1">
+                                <div class="team-icon bg-secondary rounded me-3 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-graph-up text-white"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-normal team-name">Accounts and Sales Team</div>
+                                </div>
+                                <div class="team-members d-flex">
+                                    <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=16&h=16&fit=crop&crop=face" 
+                                         class="rounded-circle member-avatar-small" width="16" height="16" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Meeting Area -->
+            <div class="col meeting-area">
+                <div class="video-meeting-container text-white h-100 position-relative">
+                    <!-- Meeting Top Bar -->
+                    <div class="meeting-header d-flex justify-content-between align-items-center p-3">
+                        <div class="meeting-info d-flex align-items-center">
+                            <div class="d-flex align-items-center me-3">
+                                <i class="bi bi-arrow-left me-2"></i>
+                                <span class="fw-semibold">UI / UX Designs</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-search me-2"></i>
+                                <i class="bi bi-shield-check me-2"></i>
+                                <i class="bi bi-three-dots-vertical me-2"></i>
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                        </div>
+                        <div class="meeting-actions d-flex align-items-center">
+                            <div class="participants-preview d-flex">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=24&h=24&fit=crop&crop=face" 
+                                     class="rounded-circle participant-thumb" width="24" height="24" alt="">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=24&h=24&fit=crop&crop=face" 
+                                     class="rounded-circle participant-thumb" width="24" height="24" alt="">
+                                <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=24&h=24&fit=crop&crop=face" 
+                                     class="rounded-circle participant-thumb" width="24" height="24" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Meeting Timer -->
+                    <div class="meeting-timer-section text-center mb-4">
+                        <div class="meeting-timer-display   ">00:30</div>
+                    </div>
+
+                    <!-- Video Participants Grid -->
+                    <div class="participants-grid d-flex justify-content-center align-items-center flex-grow-1">
+                        <div class="row justify-content-center">
+                            <!-- Elizabeth Jim -->
+                            <div class="col-auto mb-4">
+                                <div class="participant-video text-center">
+                                    <div class="participant-frame position-relative">
+                                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=140&h=140&fit=crop&crop=face" 
+                                             class="rounded-circle participant-image" width="140" height="140" alt="Elizabeth Jim">
+                                        <button class="btn btn-success btn-sm rounded-circle mic-status position-absolute">
+                                            <i class="bi bi-mic text-white"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mt-3 fw-normal participant-label">Elizabeth Jim</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Michael Simon -->
+                            <div class="col-auto mb-4">
+                                <div class="participant-video text-center">
+                                    <div class="participant-frame position-relative">
+                                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=140&h=140&fit=crop&crop=face" 
+                                             class="rounded-circle participant-image" width="140" height="140" alt="Michael Simon">
+                                        <button class="btn btn-danger btn-sm rounded-circle mic-status position-absolute">
+                                            <i class="bi bi-mic-mute text-white"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mt-3 fw-normal participant-label">Michael Simon</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Stewart Tim -->
+                            <div class="col-auto mb-4">
+                                <div class="participant-video text-center">
+                                    <div class="participant-frame position-relative">
+                                        <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=140&h=140&fit=crop&crop=face" 
+                                             class="rounded-circle participant-image" width="140" height="140" alt="Stewart Tim">
+                                        <button class="btn btn-success btn-sm rounded-circle mic-status position-absolute">
+                                            <i class="bi bi-mic text-white"></i>
+                                        </button>
+                                    </div>
+                                    <div class="mt-3 fw-normal participant-label">Stewart Tim</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Meeting Description -->
+                    <div class="meeting-description text-center mb-4">
+                        <p class="mb-1 meeting-text">Lorem Ipsum is simply dummy text of the printing</p>
+                        <p class="mb-0 meeting-text">and typesetting industry</p>
+                    </div>
+
+                    <!-- Meeting Control Panel -->
+                    <div class="meeting-controls d-flex justify-content-between align-items-center p-3">
+                        <div class="meeting-details d-flex align-items-center">
+                            <span class="me-3 meeting-date">27 Jan 2023, 10:30 AM</span>
+                        </div>
+                        <div class="invite-section d-flex align-items-center">
+                            <button class="btn btn-outline-light text-white p-1 border-0 me-2" title="Copy meeting link">
+                                <i class="bi bi-link-45deg"></i>
+                            </button>
+                            <span class="invite-text">Invite Meeting URL</span>
+                        </div>
+                    </div>
+                    <div class="meeting-controls1 d-flex justify-content-between align-items-center p-3">
+                        <div class="control-panel d-flex align-items-center">
+                            <button class="btn btn-outline-light text-white me-2 border-0 control-btn" title="Microphone">
+                                <i class="bi bi-mic"></i>
+                            </button>
+                            <button class="btn btn-danger rounded-circle me-2 end-call-btn" title="Leave meeting">
+                                <i class="bi bi-telephone-fill"></i>
+                            </button>
+                            <button class="btn btn-outline-light text-white me-2 border-0 control-btn" title="Camera">
+                                <i class="bi bi-camera-video"></i>
+                            </button>
+                            <button class="btn btn-outline-light text-white me-2 border-0 control-btn" title="Share screen">
+                                <i class="bi bi-share"></i>
+                            </button>
+                            <button class="btn btn-outline-light text-white me-2 border-0 control-btn" title="More options">
+                                <i class="bi bi-three-dots"></i>
+                            </button>
+                        </div>
+
+                <div class="chat-controls d-flex align-items-center">
+                    <button class="btn btn-outline-light text-white border-0 me-2 chat-btn" title="Show subtitles">
+                        <i class="bi bi-subtitles"></i>
+                    </button>
+                    <button class="btn btn-outline-light text-white border-0 me-2" title="Show participants">
+                        <i class="bi bi-people"></i>
+                    </button>
+                    <button class="btn btn-outline-light text-white border-0 me-2" title="Hand raise">
+                        <i class="bi bi-hand-paper"></i>
+                    </button>
+                    <button class="btn btn-outline-light text-white border-0" title="Reactions">
+                        <i class="bi bi-emoji-smile"></i>
+                    </button>
+                </div>
+
+
+
+                    </div>
+                    
+
+                         
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
