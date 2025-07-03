@@ -45,50 +45,65 @@ body {
 
 /* Teams Navigation Sidebar - Exact Purple Color */
 .teams-sidebar {
-    width: 64px;
-    min-height: calc(60vh - 20px);
-    background-color: #5e4ae3 !important;
+    width: 72px;
+    background-color: transparent; 
+    height:fit-content;
+    margin: 10px 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-item {
     position: relative;
-    width: 48px;
+    width: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.nav-icons {
+    background-color: #5e4ae3;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Allows it to shrink to fit content */
+}
+
 .nav-btn {
     width: 48px;
     height: 48px;
-    border-radius: 4px;
-    color: #b8b9bd;
     border: none;
     background: transparent;
-    transition: all 0.2s ease-in-out;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
+.nav-btn.active,
 .nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-}
-
-.nav-btn.active {
-    background-color: #6264a7;
     color: #ffffff;
 }
 
 .nav-indicator {
     position: absolute;
-    left: -16px;
+    left: -4px;
     top: 50%;
     transform: translateY(-50%);
-    width: 3px;
+    width: 4px;
     height: 24px;
-    background-color: #6264a7;
-    border-radius: 0 2px 2px 0;
-    opacity: 0;
+    background-color: red;
+    border-radius: 0 4px 4px 0;
 }
 
 .nav-item:has(.nav-btn.active) .nav-indicator {
@@ -174,8 +189,8 @@ body {
 }
 
 .btn-teams-primary {
-    background-color: #6264a7;
-    border-color: #6264a7;
+    background-color: #5e4ae3;
+    border-color: #5e4ae3;
     color: white;
 }
 
@@ -213,7 +228,7 @@ body {
 }
 
 .active-group {
-    background-color: #6264a7 !important;
+    background-color: #5e4ae3 !important;
 }
 
 .active-group:hover {
@@ -271,16 +286,18 @@ body {
 
 .meeting-timer-section {
     padding: 1rem 0;
+
+    
 }
 
 .meeting-timer-display {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 1.2rem;
+    background-color: #140e39;
+    padding: 3px 24px;
+    border-radius:60px;
+    font-size: 1.0rem;
     font-weight: 600;
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
     text-align: left;    
     float: left;
 }
@@ -317,12 +334,15 @@ body {
 }
 
 .mic-status {
-    width: 28px;
-    height: 28px;
-    border: 2px solid white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    bottom: 5px;
-    right: 5px;
+  bottom: 15px;          
+  left: 50%;              
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .participant-label {
@@ -383,6 +403,19 @@ body {
     background-color: #dc3545;
     transform: scale(1.05);
 }
+
+.control-btn {
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+    background-color: #dc3545;
+    transform: scale(1.05);
+}
+
+
 
 .chat-btn {
     width: 36px;
@@ -496,4 +529,39 @@ body {
     .meeting-area {
         padding: 0;
     }
+}
+
+/* Bottom user profile */
+.mt-auto {
+    margin-top: auto !important;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #2c2557; /* grey background */
+    color: #000; /* icon color */
+    margin-right: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-light1 {
+    background-color: #3c337d;
+}
+
+.btn-light2 {
+    background-color: #e62475;
+}
+
+.btn-light3 {
+    background-color: #adacaf;
 }
