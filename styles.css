@@ -19,7 +19,7 @@ body {
 }
 
 .teams-logo {
-    color: #6264a7 !important;
+    
     font-size: 1.2rem;
 }
 
@@ -33,10 +33,7 @@ body {
     max-width: 400px;
 }
 
-.search-box .form-control:focus {
-    border-color: #6264a7;
-    box-shadow: 0 0 0 0.25rem rgba(98, 100, 167, 0.25);
-}
+
 
 /* Profile Image */
 .profile-img {
@@ -195,19 +192,13 @@ body {
 }
 
 .btn-teams-primary:hover {
-    background-color: #5558a3;
-    border-color: #5558a3;
+
     color: white;
 }
 
-.btn-outline-teams-primary {
-    color: #6264a7;
-    border-color: #6264a7;
-}
+
 
 .btn-outline-teams-primary:hover {
-    background-color: #6264a7;
-    border-color: #6264a7;
     color: white;
 }
 
@@ -232,7 +223,7 @@ body {
 }
 
 .active-group:hover {
-    background-color: #5558a3 !important;
+    background-color: #130d38 !important;
 }
 
 .team-icon {
@@ -241,7 +232,7 @@ body {
 }
 
 .bg-teams-purple {
-    background-color: #6264a7 !important;
+    background-color: #5e4ae3 !important;
 }
 
 .team-name {
@@ -446,20 +437,7 @@ body {
     }
 }
 
-/* Focus States */
-.form-control:focus {
-    border-color: #6264a7;
-    box-shadow: 0 0 0 0.25rem rgba(98, 100, 167, 0.25);
-}
 
-/* Teams-specific colors - Exact Match */
-.text-primary {
-    color: #6264a7 !important;
-}
-
-.bg-primary {
-    background-color: #6264a7 !important;
-}
 
 /* Button Hover Effects */
 .btn:hover {
